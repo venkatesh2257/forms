@@ -1,0 +1,80 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+
+
+		<title>Dashboard form</title>
+	</head>
+	<body bgcolor="#64b8e8">
+		<div align="center">
+			<h2>Work Report</h2> 
+		</div>
+		<div >
+			<center>
+	<form action="workreport.php" method="post" style="text-align: center; border: 2px solid black ; width: 50%;
+        margin-left :0%" >
+		<div style="margin-top:30px;">
+	<label for="Ministry" >Select a MinistryName</label>
+	<select id="ministry" name="ministry" value = "ministry" required>
+	  <option value="Rags">Rags</option>
+	  <option value="FWM">FWM</option>
+	  <option value="Exedos">Exedos</option>
+	  <option value="SajiniGarments">SajiniGarments</option>
+	  <option value="Dove">Dove</option>
+	  <option value="Studio">Studio</option>
+	  <option value="RescueHome">RescueHome</option>
+	  <option value="Medical">Medical</option>
+	  <option value="IBC">IBC</option>
+	  <option value="WorshipTeam">WorshipTeam</option>
+	  
+	</select></div>
+	<div style="margin-top: 5px">
+	<label for="month" >Select a Month</label>
+	<select id="month" name="month" value ="month" required>
+	  <option value="Jan">Jan</option>
+	  <option value="Feb">Feb</option>
+	  <option value="March">March</option>
+	  <option value="April">April</option>
+	  <option value="May">May</option>
+	  <option value="Jun">Jun</option>
+	  <option value="July">July</option>
+	  <option value="Aug">Aug</option>
+	  <option value="Sept">Sept</option>
+	  <option value="Oct">Oct</option>
+	  <option value="Nov">Nov</option>
+	  <option value="Dec">Dec</option>
+	  
+	</select></div>
+<div style="margin-top:5px">
+				 <input type="text" id="Income" placeholder ="Income" name="income" required><br><br>
+</div>
+
+	
+<div>
+				<input type="text" id="Expensives" placeholder="Expensives" name="expensives" required><br><br>
+</div>
+
+	
+<div>				
+				<input type="text" id="Summary"  placeholder="Summary" name="summary" required><br><br>
+</div>			
+
+				
+<div>
+				<textarea id="WorkReport" placeholder ="Work Report" rows="10" cols="50" name="workReport" required></textarea>
+</div>				
+		
+
+<div>
+			<button type ="Submit" name = "Submit" placeholder="Submit" value="Submit"  style="font-size: 24px;background: #40ed21;" >Submit</button><br><br>
+</div>	
+
+		
+
+	</form></center></div><br>
+
+		<div>
+			<center><button  size="30px" style="font-size: 20px" ><a href="fetch.php">View Report</a>
+				</button></center></div>	
+	</body>
+	</html>
